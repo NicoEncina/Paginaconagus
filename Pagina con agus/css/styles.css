@@ -1,0 +1,197 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "aside main main main main"
+    "footer footer footer footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(214, 214, 214);
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(230, 230, 230);
+}
+
+footer {
+    grid-area: footer;
+    background-color: bisque;
+}
+
+/**Header**/
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contenedor-logo {
+    width: 200px;
+    margin-left: 20px;
+}
+.logo {
+    width: 140px;
+}
+
+.usuarios {
+    margin-right: 20px;
+}
+
+.logo-cuenta {
+    width: 30px;
+}
+.logo-carrito {
+    width: 30px;
+}
+
+.contenedor-navegador {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+    
+    
+}
+
+.navegacion {
+    margin-bottom: 5px;   
+}
+
+.navegacion a {
+    color: rgb(52, 82, 154);
+    font-size: 25px;
+    text-decoration: none;
+    
+    
+}
+
+.navegacion a:hover {
+    color: rgb(33, 52, 95);
+    transform: scale(1.1);
+    background-color: #c9c2c2;
+    
+}
+
+
+
+form {
+    display: flex;
+    align-items: center;
+    width: 650px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button[type="submit"] svg {
+    fill: #999;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover svg {
+    fill: #333;
+}
+
+
+
+/**Main**/
+
+.card {
+    height: 500px;
+    width: 300px;
+    background-color: aqua;
+    display: flex;
+    border-radius: 4px;
+    }
+
+.contenedor-card {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card4 card5 card6"
+    ;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+/**Aside**/
+
+.barra-lateral {
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion-aside {
+    display: flex;
+    margin: 20px;
+}
+
+.navegacion-aside a {
+    color: rgb(52, 82, 154);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+/**Footer**/
+
+.contenedor-footer {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.derechos {
+    display: flex;
+    align-items: end;
+}
+
+
+
+
+
